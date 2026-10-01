@@ -1,12 +1,10 @@
 # Signature Detection
 
-Mini project ini merupakan sistem sederhana untuk mendeteksi keberadaan tanda tangan kepala sekolah pada citra dokumen.
+Mini project ini merupakan sistem sederhana untuk mendeteksi keberadaan tanda tangan kepala sekolah pada citra dokumen menggunakan pengolahan citra digital.
 
-Sistem menggunakan metode pengolahan citra dengan tahapan cropping, grayscale, thresholding, morphological operation, dan perhitungan jumlah piksel foreground.
+## Tahapan Pengolahan
 
-## Metode
-
-Tahapan yang digunakan dalam program:
+Program melakukan beberapa tahapan sebagai berikut:
 
 1. Crop area tanda tangan kepala sekolah.
 2. Konversi citra menjadi grayscale.
@@ -18,12 +16,12 @@ Tahapan yang digunakan dalam program:
 8. Menghitung jumlah piksel foreground.
 9. Menghitung persentase foreground.
 10. Menentukan hasil:
-   - `SIGNATURE PRESENT`
-   - `SIGNATURE ABSENT`
+    - `SIGNATURE PRESENT`
+    - `SIGNATURE ABSENT`
 
 ## Dataset
 
-Dataset terdiri dari:
+Dataset yang digunakan terdiri dari:
 
 - 9 citra tanpa tanda tangan (`SIGNATURE ABSENT`)
 - 9 citra dengan tanda tangan (`SIGNATURE PRESENT`)
@@ -42,29 +40,7 @@ Program membutuhkan:
 
 ## Instalasi
 
-Install library Python dengan perintah:
+Install library Python yang diperlukan:
 
 ```bash
 pip install opencv-python numpy pytesseract
-
-## Cara Menjalankan Program
-
-1. Pastikan Python 3.x dan Tesseract OCR sudah terinstall.
-
-2. Install library yang diperlukan:
-   pip install opencv-python numpy pytesseract
-
-3. Buka file test.py dan tentukan gambar yang ingin diuji pada bagian:
-   IMAGE_PATH = r"SIGNATURE ABSENT\gambar 1.jpg"
-
-4. Untuk menguji gambar dengan tanda tangan, gunakan:
-   IMAGE_PATH = r"SIGNATURE PRESENT\gambar(1).jpeg"
-
-5. Jalankan program melalui terminal:
-   python test.py
-
-6. Program akan menampilkan hasil analisis pada terminal dan visualisasi
-   tahapan pengolahan citra.
-
-7. Hasil visualisasi akan disimpan pada folder:
-   Hasil/
