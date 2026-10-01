@@ -46,3 +46,25 @@ Install library Python dengan perintah:
 
 ```bash
 pip install opencv-python numpy pytesseract
+
+## Cara Menjalankan Program
+
+1. Pastikan Python 3.x dan Tesseract OCR sudah terinstall.
+
+2. Install library yang diperlukan:
+   pip install opencv-python numpy pytesseract
+
+3. Buka file test.py dan tentukan gambar yang ingin diuji pada bagian:
+   IMAGE_PATH = r"SIGNATURE ABSENT\gambar 1.jpg"
+
+4. Untuk menguji gambar dengan tanda tangan, gunakan:
+   IMAGE_PATH = r"SIGNATURE PRESENT\gambar(1).jpeg"
+
+5. Jalankan program melalui terminal:
+   python test.py
+
+6. Program akan menampilkan hasil analisis pada terminal dan visualisasi
+   tahapan pengolahan citra.
+
+7. Hasil visualisasi akan disimpan pada folder:
+   Hasil/
