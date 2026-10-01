@@ -52,7 +52,7 @@ pip install opencv-python numpy pytesseract
 cd Deteksi_tanda_tangan
 
 3. Jalankan program dengan perintah:
-python deteksi_tanda_tangan.py
+python test.py
 
 4. Program akan memproses seluruh gambar dan menampilkan hasil analisis pada terminal.
 
